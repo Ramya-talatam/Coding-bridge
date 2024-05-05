@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="container">
+			  <div class="im-3">
+				<img src="trainer.png" alt="im-3">
+			  </div>
+			<div class="image im-4">
+			  <img src="trainer_details.png" alt="im-4">
+			</div>
+		  </div>
+	</main>
+</Layout>
+
+<style>
+	 main{
+      background: url('im-1.png') no-repeat center center fixed;
+    }
+    .container {
+		
+		display: grid;
+		grid-auto-flow:column;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+border: 3.2px 0px 0px 0px;
+opacity: 0px;
+
+    }
+    .im-3 {
+width: 334px;
+height: 334px;
+top: 1080px;
+left: 320px;
+gap: 0px;
+opacity: 0px;
+
+border: 2.93px solid #FE4B49;
+border-radius: 50%;
+      z-index: 2;
+    }
+    .im-4 {
+width: 1067.8px;
+height: 330px;
+top: 1086px;
+left: 589px;
+gap: 0px;
+opacity: 0px;
+
+    }
+  </style>

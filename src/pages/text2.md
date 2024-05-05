@@ -1,0 +1,2 @@
+Kindly help us reach every student of vizag & andhra who's finished inter and entering into B.Tech or anyone who's looking to get a job or looking to startup in the
+**Gen Al Empowered IT Industry which is the Future**

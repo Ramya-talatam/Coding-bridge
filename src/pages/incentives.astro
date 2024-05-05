@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+let posts = await Astro.glob('./text2.md');
+let post = posts[0];
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+        <post.Content />
+	</main>
+</Layout>
+<style>
+    main
+    {
+        color:aliceblue;
+    }
+    </style>
