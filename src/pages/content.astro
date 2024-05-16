@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+let posts = await Astro.glob('./content1.md');
+let post = posts[0];
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+        <post.Content />
+        <br>
+        <br>
+        <img class="mx-auto" src="/Coding-bridge/content-pic.png" alt="course content" />
+	</main>
+</Layout>
+<style>
+
+</style>

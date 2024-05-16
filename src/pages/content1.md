@@ -1,0 +1,1 @@
+<span class = "text-white text-l tracking-wide">The program is designed to enable students to **<span style="color:red">develop a 2048 game and a Password-less Login System as part of the course.</span>** The following language level concepts will be thoroughly covered:</span>
