@@ -1,0 +1,89 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Pricing from '../components/pricing.astro';
+import Offer from '../components/offer.astro';
+// import Img from '../components/offerimg.astro';
+---
+
+<Layout title="bootcamp">
+	<main>
+	<Pricing/>
+	<!-- <Img/> -->
+	<img id="ig" src={'../pricing.png'} alt="Offer." width="300" height="100"/>
+	<Offer/>
+	
+	</main>
+</Layout>
+<style is:global>
+	
+	main{
+		background-color: black;
+		padding-left:13%;
+		padding-right:15%;
+	}
+	
+	#foundation{
+		background-color:#fe4b49;
+	
+	}
+	
+				.price{
+					display: block;
+					width:180px;
+					height:150px;
+					background-color: rgb(35, 33, 33);
+					color: beige;
+					padding:10px 10px;
+					text-align:center;
+					border: 1px solid rgb(35, 33, 33);
+					border-radius:5px;
+				}
+	
+	
+				.btw{
+					display: block;
+					color: rgb(81, 81, 78);
+					height:150px;
+					text-align:center;
+					min-width:40px;
+				}
+	
+	
+				.pricing{
+					display: inline-flex;
+				}
+	
+				.p1{
+					font-size:20px;
+					font-height:0px;
+					font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+			   
+				}
+	
+				.p2{
+					font-size:17px;
+					font-style: italic;
+					font-height:0px;
+				}
+	
+				.p3{
+					font-size:20px;
+					font-height:0px;
+					font-weight:600;
+					font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			   
+				}
+	
+				#offer{
+					color:white;
+					font-size:19px;
+					font-weight:200;
+					font-family:  Geneva, Verdana, sans-serif;
+	
+				}
+	
+				#ig{
+					margin-top:30px;
+					padding-left:30%;
+				}
+	</style>
