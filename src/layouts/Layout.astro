@@ -30,67 +30,74 @@ import rupee from "../assets/Images/rupee.png";
     />
   </head>
   <body class="bg-black h-screen">
-    <div class="rounded m-14 h-3/6 bg-zinc-900 border border-4 border-zinc-800">
-      <div class="flex flex-row m-6 h-[315px]">
-        <div class="w-3/4 p-6">
-          <h1 class="text-6xl font-bold text-white tracking-wide font-inter">
+    <div
+      class="rounded m-8 md:m-14 h-4/5 md:h-3/6 bg-zinc-900 border border-4 border-zinc-800"
+    >
+      <div class="flex flex-col md:flex-row m-6 h-[315px]">
+        <div class="w-full md:w-3/4 md:p-6">
+          <h1
+            class="text-2xl align-center md:text-6xl font-bold text-white md:tracking-wide font-inter"
+          >
             Coding Bridge Course
           </h1>
           <br />
           <Content />
+          <br />
         </div>
-        <div class="w-1/4 h-full">
+        <div class="w-full md:w-1/4 h-full">
           <!-- <Image src={img} alt="details" class="h-full" /> -->
-		  <Image src={img} alt="details" class="h-full" />
+          <Image src={img} alt="details" class="h-full" />
         </div>
       </div>
-      <br />
-      <br />
+    </div>
+    <div class="m-8 md:m-14 flex flex-col md:flex-row space-y-4 items-center md:space-x-4">
       <div
-        class="h-1/4 w-2/3 flex flex-row justify-between"
+        class="mt-4 flex justify-center border border-4 border-zinc-800 flex-col items-center space-y-0.5 h-24 w-56 md:w-48"
       >
-        <div class="flex flex-col items-center space-y-2 justify-center h-full border border-4 border-zinc-800 p-6 w-48 ">
-          <div class="flex flex-row space-x-2.5 items-center">
-            <Image src={calendar} alt="calender" class="h-8 w-8" />
-            <p class="text-white  italic">21 Days</p>
-          </div>
-          <p class="text-white text-sm font-bold">May 20-Jun 8</p>
+        <div class="flex flex-row space-x-1.5 items-center">
+          <Image src={calendar} alt="calender" class="h-8 w-8" />
+          <p class="text-white italic">21 Days</p>
         </div>
-        <div class="flex justify-center h-full border border-4 border-zinc-800 p-6 w-48">
-          <div class="flex flex-row space-x-2 items-center">
-            <Image src={sessions} alt="calender" class="h-10 w-9" />
-            <p class="text-white font-bold">36 Sessions</p>
-          </div>
+        <p class="text-white text-sm font-bold">May 20-Jun 8</p>
+      </div>
+      <div
+        class="flex justify-center  border border-4 border-zinc-800 h-24 w-56 md:w-48"
+      >
+        <div class="flex flex-row space-x-1.5 items-center">
+          <Image src={sessions} alt="calender" class="h-8 w-8" />
+          <p class="text-white font-bold">36 Sessions</p>
         </div>
-        <div class="h-full border border-4 border-zinc-800 p-6 w-48">
-          <div class="flex flex-row space-x-3 items-center">
-            <Image src={clock} alt="clock" class="h-6 w-6"/>
-            <div class = "flex flex-col space-y-2"> 
+      </div>
+      <div class="flex justify-center  border border-4 border-zinc-800 h-24 w-56 md:w-48">
+        <div class="flex flex-row space-x-2 items-center">
+          <Image src={clock} alt="clock" class="h-6 w-6" />
+          <div class="flex flex-col space-y-2">
             <p class="text-white font-bold italic text-xs">9.00AM-10.30AM</p>
-            <p class ="text-white font-bold italic text-xs">8.00PM-9.30PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="h-full flex justify-center border border-4 border-zinc-800 p-6 w-48">
-          <div class="flex flex-row space-x-3 items-center">
-            <Image src={rupee} alt="calender" class="h-6 w-6" />
-            <p class="text-white font-bold">2999 INR</p>
+            <p class="text-white font-bold italic text-xs">8.00PM-9.30PM</p>
           </div>
         </div>
       </div>
-      <div class="border border-4 border-zinc-800 mt-8"></div>
-        <nav>
-          <a href="/Coding-bridge/">Course Content</a>
-          <a href="/Coding-bridge/audience">Course Audience</a>
-          <a href="/Coding-bridge/takeaways">Course Takeaways</a>
-          <a href="/Coding-bridge/trainer">Trainer Profile</a>
-          <a href="/Coding-bridge/pricing-page">Pricing</a>
-          <a href="/Coding-bridge/schedule">Schedule</a>
-          <a href="/Coding-bridge/incentives">Incentives For All</a>
+      <div
+        class="flex justify-center border border-4 border-zinc-800 h-24 w-56 md:w-48"
+      >
+        <div class="flex flex-row space-x-3 items-center">
+          <Image src={rupee} alt="calender" class="h-6 w-6" />
+          <p class="text-white font-bold">2999 INR</p>
+        </div>
+      </div>
+    </div>
+    <div class="border border-4 border-zinc-800 mx-14"></div>
+        <nav class = "mt-4 md:space-x-14 flex flex-col md:flex-row">
+            <button class="text-white hover:bg-red-600 p-2 rounded-md md:ml-12" onclick="location.href='/Coding-bridge/'">Course Content</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/audience'">Course Audience</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/takeaways'">Course Takeaways</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/trainer'">Trainer Profile</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/pricing-page'">Pricing</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/schedule'">Schedule</button>
+            <button class="text-white hover:bg-red-600 p-2 rounded-md" onclick="location.href='/Coding-bridge/incentives'">Incentives For All</button>
         </nav>
 		<slot />
     </div>
-    
   </body>
 </html>
 <style is:global>
@@ -99,14 +106,7 @@ import rupee from "../assets/Images/rupee.png";
     margin: 0;
     padding: 0;
   }
-  nav a
-  {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-  }
-  main
-  {
-	padding: 50px;
+  main {
+    padding: 50px;
   }
 </style>

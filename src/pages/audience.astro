@@ -1,40 +1,39 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-        <ul role="list" class="link-card-grid">
-		<Card
-				href="../a1.png"
-				title="Intermediate students"
-				body="who finished their exams & are entering B.Tech"
-			/>
-            <Card
-				href="../a2.png"
-				title="Career Transition"
-				body="You can be from any other industry transitioning to IT"
-			/>
-            
-            <Card
-				href="../a3.png"
-				title="B.Tech/Degree Passed out"
-				body="who finished a degree/B.Tech and looking to get into IT industry"
-			/>
-            <Card
-				href="../a4.png"
-				title="Avid Learner"
-				body="or you’re already an expert from industry looking to brush up your Foundations"
-			/>
-            </ul>
-	</main>
+  <main>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="../a1.png"
+        title="Intermediate students"
+        body="who finished their exams & are entering B.Tech"
+      />
+      <Card
+        href="../a2.png"
+        title="Career Transition"
+        body="You can be from any other industry transitioning to IT"
+      />
+
+      <Card
+        href="../a3.png"
+        title="B.Tech/Degree Passed out"
+        body="who finished a degree/B.Tech and looking to get into IT industry"
+      />
+      <Card
+        href="../a4.png"
+        title="Avid Learner"
+        body="or you’re already an expert from industry looking to brush up your Foundations"
+      />
+    </ul>
+  </main>
 </Layout>
 <style>
-    .link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-		gap: 2rem;
-
-	}
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 2rem;
+  }
 </style>
